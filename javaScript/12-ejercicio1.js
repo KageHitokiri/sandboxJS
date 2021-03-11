@@ -6,8 +6,12 @@ Programa que pide dos numeros, nos diga cual es mayor, menor y si son iguales.
 let number1;
 let number2;
 
-number1 = parseInt(prompt("Introduzca un número, por favor"));
-number2 = parseInt(prompt("Introduzca otro número, por favor"));
+while(isNaN(number1)){
+    number1 = parseInt(prompt("Introduzca un número, por favor"));
+}
+while(isNaN(number2)){
+    number2 = parseInt(prompt("Introduzca otro número, por favor"));
+}
 
 //console.log(typeof(number1));
 

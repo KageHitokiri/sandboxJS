@@ -13,9 +13,9 @@ function sumame(num1,num2, sumaYMuestra, sumaPorDos) {
     return sumar;
 }
 sumame(5,10, 
-    function(dato){
+    dato =>{
         console.log("La suma es: "+dato)
 },
-    function(dato){
+    dato =>{
         console.log("La suma por dos es :"+dato*2);
 });

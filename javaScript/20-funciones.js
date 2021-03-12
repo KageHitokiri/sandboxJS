@@ -3,18 +3,30 @@
 /**
  * Funciones
  */
+function add(number1, number2) {
+    return number1+number2;
+}
+function substract(number1, number2) {
+    return number1-number2;
+}
+function multiplication (number1, number2) {
+    return number1*number2;
+}
+function division(number1, number2) {
+    return number1/number2;
+}
 
 function calculadora(number1, number2=3, operator = "+"){
     let result;
 
     if (operator=="+"){
-        result = number1+number2;
+        result = add(number1,number2);
     } else if (operator=="-") {
-        result = number1-number2;
+        result = substract(number1,number2);
     } else if (operator=="*") {
-        result = number1*number2;
+        result = multiplication(number1,number2);
     } else if (operator=="/") {
-        result = number1/number2;
+        result = division(number1,number2);
     } else {
         return "Operador inválido";
     }

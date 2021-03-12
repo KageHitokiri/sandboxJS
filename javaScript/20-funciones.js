@@ -4,12 +4,22 @@
  * Funciones
  */
 
-function calculadora(){
-    console.log("Soy la calculadora");
-    return "Esto es una prueba";
+function calculadora(number1, number2, operator){
+    let result;
+    
+    if (operator=="+"){
+        result = number1+number2;
+    } else if (operator=="-") {
+        result = number1-number2;
+    } else if (operator=="*") {
+        result = number1*number2;
+    } else if (operator=="/") {
+        result = number1/number2;
+    } else {
+        return "Operador inválido";
+    }
+    return result;
 }
 
-calculadora();
-
-let test = calculadora();
+let test =calculadora(5,2,"*");
 console.log(test);

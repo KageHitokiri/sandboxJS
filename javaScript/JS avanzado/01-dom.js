@@ -23,7 +23,7 @@ basicBox = document.querySelector("#basicBox");
 /**
  * Conseguir elementos por su tag
  */
-
+/*
 let allDivs = document.getElementsByTagName("div");
 let contenido = allDivs[2];
 contenido.innerHTML = "Nadie piensa en el 2º";
@@ -42,11 +42,28 @@ for(value in allDivs) {
     }
 }
 console.log(allDivs);
-
+*/
 /**
- * Conseguir elementos por su clase
+ * Conseguir elementos por su clase CSS
  */
 
+let redDivs = document.getElementsByClassName("rojo");
+let yellowDivs = document.getElementsByClassName("amarillo");
+for(let index in redDivs) {
+    if (redDivs[index].className=="rojo") {
+        redDivs[index].style.background = "red";
+    }
+}
+console.log(redDivs);
+/**
+ * Query Selector
+ * Únicamente selecciona el primer elemento
+ * Útil para capturar mediante ID, ya que no se pueden repetir
+ */
+let id = document.querySelector("#miSection");
+let redID = document.querySelector(".rojo");
+console.log(id);
+console.log(redID);
 
 /**
  * Código

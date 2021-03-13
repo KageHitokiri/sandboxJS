@@ -3,7 +3,7 @@
 let categorias = ["Acción", "Terror", "RPG"];
 let titulos = ["Final Fantasy 14", "Golden Sun", "Silent Hill"];
 let juegos = [categorias, titulos];
-let titulo;
+//let titulo;
 let juegosString;
 /*
 console.log(juegos[1][2]);
@@ -35,8 +35,15 @@ if (index > -1) {
 juegosString = juegos.join();
 
 console.log(juegosString);
-*/
+
 console.log(titulos.sort());
 console.log(titulos)
 console.log(titulos.reverse());
 console.log(titulos)
+*/
+let precios = [20,1,5,7,9,10,50];
+let search;
+search = titulos.findIndex(titulo => titulo == "Silent Hill");
+console.log(search);
+search = precios.some(precio => precio >= 15);
+console.log(search);

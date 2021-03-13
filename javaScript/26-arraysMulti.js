@@ -24,7 +24,7 @@ do {
 console.log(juegos);
 juegos.pop();
 console.log(juegos);
-*/
+
 
 var index = titulos.indexOf("Final Fantasy 14");
 console.log(index);
@@ -33,4 +33,10 @@ if (index > -1) {
     titulos.splice(index,1);
 }
 juegosString = juegos.join();
+
 console.log(juegosString);
+*/
+console.log(titulos.sort());
+console.log(titulos)
+console.log(titulos.reverse());
+console.log(titulos)

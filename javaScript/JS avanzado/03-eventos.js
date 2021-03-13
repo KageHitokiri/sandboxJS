@@ -1,15 +1,22 @@
 "use strict"
-
+/**
+ * Declaración de variables
+ */
+let button = document.querySelector("#pushMeButton");
+let input = document.querySelector("#inputField")
 /**
  * Eventos de ratón
  */
+ 
 /**
  * Click
  */
-let button = document.querySelector("#pushMeButton");
+
 button.addEventListener("click", function(){
     switchColor();
 });
+
+
 
 function switchColor() {
     let buttonBackground = button.style.background;
@@ -39,4 +46,39 @@ button.addEventListener("mouseover", function(){
  */
 button.addEventListener("mouseout", function(){
     button.style.border="dotted";
+})
+/**
+ * Eventos de campo
+ */
+
+/**
+ * Focus
+ */
+input.addEventListener("focus",function(){
+    console.log("[Event=Focus]Estás haciendo foco al input");
+})
+
+/**
+ * Blur
+ */
+input.addEventListener("blur",function(){
+    console.log("[Event=Blur]You're outta range!");
+})
+/**
+ * KeyDown
+ */
+input.addEventListener("keydown",function(event){
+    console.log("[Event=KeyDown]Acabas de pulsar la tecla "+String.fromCharCode(event.keyCode));
+})
+/**
+ * KeyPress
+ */
+ input.addEventListener("keypress",function(event){
+    console.log("[Event=KeyPress]Estás pulsando la tecla "+String.fromCharCode(event.keyCode));
+})
+/**
+ * KeyUp
+ */
+ input.addEventListener("keyup",function(event){
+    console.log("[Event=KeyUp]Has dejado de pulsar la tecla "+String.fromCharCode(event.keyCode));
 })

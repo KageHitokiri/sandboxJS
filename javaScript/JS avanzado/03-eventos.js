@@ -18,6 +18,8 @@ window.addEventListener("load", ()=> {
 
     button.addEventListener("click", function(){
         switchColor();
+        this.style.border="5px solid black";
+        console.log(this);
     });
 
 

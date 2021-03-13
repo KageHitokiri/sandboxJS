@@ -19,8 +19,13 @@ do {
 } while (elemento<=0 && elemento>=3);
 
 alert(nombres[elemento]);
-*/
+
 document.write("Los alumnos son<br/>");
 for (let i = 0; i<nombres.length;i++) {
     document.write("<li>"+nombres[i]+"</li>");
 }
+*/
+document.write("Los alumnos son<br/>");
+nombres.forEach((elemento, index)=>{
+    document.write("<li>"+(index+1)+": "+elemento+"</li>");
+})

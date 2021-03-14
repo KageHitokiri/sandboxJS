@@ -31,4 +31,17 @@ window.addEventListener('load',()=>{
         $(this).css('background','yellow');
     };
     box.hover(switchToRed, switchToGreen);
+
+    /**
+     * Click & DoubleClick
+     */
+
+    box.click(function(){
+        $(this).css('background','ligthblue')
+                .css('color','purple');
+    });
+    box.dblclick(function(){
+        $(this).css('background','pink')
+                .css('color','orange');
+    });
 })

@@ -47,5 +47,12 @@ window.addEventListener("load",()=>{
         }
         
     });
-    
+    /**
+     * Selectores de atributo
+     */
+
+    $('[title="Google"]').css('background', '#afafaf');
+    $('[title="GitHub"]').css('background','#000000')
+                        .css('color','white');
+                    
 })

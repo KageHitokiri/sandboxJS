@@ -20,5 +20,19 @@ window.addEventListener("load",()=>{
     verde.css("background","lightgreen")
         .css("color","blue");
 
+    /**
+     * Selectores de clase
+     */
+
+    var zebra =$(".zebra");
+    //var borderlessCSS = $(".borderless");
+    console.log(zebra);
+
+    zebra.css("border", "3px dashed black");
+    $(".borderless").click(function(){
+        console.log("Has hecho click");
+        $(this).addClass("zebra");
+    });
+
     
 })

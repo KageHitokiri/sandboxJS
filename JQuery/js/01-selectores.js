@@ -33,6 +33,19 @@ window.addEventListener("load",()=>{
         console.log("Has hecho click");
         $(this).addClass("zebra");
     });
+    /**
+     * Selectores de etiqueta
+     */
+    var parrafos =$("p").css("cursor","pointer");
 
+    parrafos.click(function(){
+        let that = $(this);
+        if(!that.hasClass("pequeño")) {
+            that.addClass("pequeño");
+        } else {
+            that.removeClass("pequeño");
+        }
+        
+    });
     
 })

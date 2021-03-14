@@ -6,6 +6,7 @@ window.addEventListener('load',()=>{
     })
 
     let box;
+    let nameInput;
 
     /**
      * mouseover y mouseout
@@ -43,5 +44,17 @@ window.addEventListener('load',()=>{
     box.dblclick(function(){
         $(this).css('background','pink')
                 .css('color','orange');
+    });
+    /**
+     * Focus y blur
+     */
+    nameInput = $('#name');
+    nameInput.focus(function(){
+        $(this).css('border','2px solid green');
+    });
+
+    nameInput.blur(function(){
+        $(this).css('border','1px solid transparent');
+        $('#data').text($(this).val()).show();
     });
 })

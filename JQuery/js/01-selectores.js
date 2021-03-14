@@ -8,9 +8,16 @@ window.addEventListener("load",()=>{
     /**
      * Selector ID
      */
-    var rojo = $("#parrafoRojo");
-    var amarillo = $("#parrafoAmarillo");
-    var verde = $("#parrafoVerde");
+    var rojo;
+    var amarillo;
+    var verde;
+    var zebra;
+    var parrafos;
+    let search;
+
+    rojo = $("#parrafoRojo");
+    amarillo = $("#parrafoAmarillo");
+    verde = $("#parrafoVerde");
 
     rojo.css("background","red")
         .css("color","white");
@@ -24,7 +31,7 @@ window.addEventListener("load",()=>{
      * Selectores de clase
      */
 
-    var zebra =$(".zebra");
+    zebra =$(".zebra");
     //var borderlessCSS = $(".borderless");
     console.log(zebra);
 
@@ -36,7 +43,8 @@ window.addEventListener("load",()=>{
     /**
      * Selectores de etiqueta
      */
-    var parrafos =$("p").css("cursor","pointer");
+    
+    parrafos =$("p").css("cursor","pointer");
 
     parrafos.click(function(){
         let that = $(this);
@@ -54,5 +62,14 @@ window.addEventListener("load",()=>{
     $('[title="Google"]').css('background', '#afafaf');
     $('[title="GitHub"]').css('background','#000000')
                         .css('color','white');
+    /**
+     * Otros
+     */
+    $('p,a').addClass("margenSuperior");
+
+    
+
+    search = $('#containerBox .resaltado');
+    console.log(search);
                     
 })

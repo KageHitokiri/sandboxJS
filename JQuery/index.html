@@ -16,7 +16,15 @@
                 .pequeño{
                     font-size: 5px;
                 }
+                .margenSuperior{
+                    display:block;
+                    margin-top:20px;
+                }
+                .resaltado{
+                    border: 2px solid red;
+                }
             </style>
+
     </head>
     <body>
         <h1>Aprendiendo jQuery</h1>
@@ -31,5 +39,14 @@
         <p id="parrafoVerde">Yo quiero ser azul</p>
         <p>Soy un párrafo ignorado :(</p>
         <p class="zebra">A mi no me quieren :(</p>
+
+        <div id="containerBox">
+            <p>Hola soy una caja</p>
+            <ul>
+                <li>Elemento1</li>
+                <li class="resaltado">Elemento2</li>
+            </ul>
+            <span class="resaltado">Soy un span, pero no sé que es un Span</span>
+        </div>
     </body>
 </html>

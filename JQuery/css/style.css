@@ -1,0 +1,47 @@
+/*Contenedores*/
+#containerBox{
+    display:block;
+    width: 250px;
+    height: 250px;
+    border: 2px solid;
+    background-color: yellow;
+}
+#data{
+    border: 2px dashed black;
+    padding: 10px;
+    margin: 10px;
+    height: 20px;
+    width: 300px;
+    display:none;
+}
+#itFollows{
+    width: 50px;
+    height: 50px;
+    display:block;
+    background-color: aqua;
+    border-radius: 300px;
+    position:absolute;
+    border: 2 solid black;
+    text-align: center;
+    opacity: 50%;
+}
+/*Clases*/  
+.zebra{
+    padding:5px;
+}
+.pequeño{
+    font-size: 5px;
+}
+.margenSuperior{
+    display:block;
+    margin-top:20px;
+}
+.resaltado{
+    border: 2px solid red;
+}
+/*Formularios*/
+input{
+    padding: 10px;
+    width: 250px;
+    font-size: 25px;
+}

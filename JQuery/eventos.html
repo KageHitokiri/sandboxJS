@@ -3,43 +3,13 @@
     <head>
         <title>Aprendiendo jQuery</title>
         <meta charset="utf-8">
-        <script type="text/javascript" src="js/test.js"></script>
+        <link rel="stylesheet" href="css/style.css">
         <script
             src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
             crossorigin="anonymous"></script>
-            <script type="text/javascript" src="js/02-eventos.js"></script>
-            <style>
-                #containerBox{
-                    display:block;
-                    width: 250px;
-                    height: 250px;
-                    border: 2px solid;
-                    background-color: yellow;
-                }
-                input{
-                    padding: 10px;
-                    width: 250px;
-                    font-size: 25px;
-                }
-                #data{
-                    border: 2px dashed black;
-                    padding: 10px;
-                    margin: 10px;
-                    height: 20px;
-                    width: 300px;
-                    display:none;
-                }
-                #itFollows{
-                    width: 25px;
-                    height: 25px;
-                    display:block;
-                    background-color: aqua;
-                    border-radius: 300px;
-                    position:absolute;
-                    border: 2 solid black;
-                }   
-            </style>
+        <script type="text/javascript" src="js/test.js"></script>
+        <script type="text/javascript" src="js/02-eventos.js"></script>
     </head>
     <body>
         <h1>Eventos jQuery</h1>
@@ -47,10 +17,9 @@
             <input type="text" id="name"/>
         </form>
         <div id="data">
-
         </div>
         <div id="itFollows">
-
+            <p>Soy el puntero</p>
         </div>
         <div id="containerBox">
             <p>Hola soy una caja</p>

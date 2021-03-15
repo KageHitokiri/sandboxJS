@@ -25,6 +25,15 @@
     text-align: center;
     opacity: 50%;
 }
+#vanishContainer{
+    height: 50px;
+    width: 300px;
+    border: 2px dashed black;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 /*Clases*/  
 .zebra{
     padding:5px;

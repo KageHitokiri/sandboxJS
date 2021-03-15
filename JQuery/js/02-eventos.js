@@ -1,12 +1,10 @@
 'use strict'
 
 window.addEventListener('load',()=>{
-    $(document).ready(function(){
-        alert("Event loaded");
-    })
 
     let box;
     let nameInput;
+    let dataBox;
 
     /**
      * mouseover y mouseout
@@ -49,12 +47,40 @@ window.addEventListener('load',()=>{
      * Focus y blur
      */
     nameInput = $('#name');
+    dataBox = $('#data');
+
     nameInput.focus(function(){
         $(this).css('border','2px solid green');
     });
 
     nameInput.blur(function(){
         $(this).css('border','1px solid transparent');
-        $('#data').text($(this).val()).show();
+        dataBox.text($(this).val()).show();
     });
+    /**
+     * Mousedown y Mouseup
+     */
+    dataBox.mousedown(function(){
+        $(this).css('border-color','gray')
+                .css('background',"orange");
+    });
+
+    dataBox.mouseup(function(){
+        $(this).css('border-color','black')
+                .css('background',"white");
+    });
+
+    /**
+     * Mousemove
+     */
+
+    $(document).mousemove(function(){
+        //console.log(event.clientX);
+        //console.log(event.clientY);
+        $('body').css('cursor','none');
+        $('#itFollows').css('left',event.clientX)
+                        .css('top',event.clientY);
+
+    })
+
 })

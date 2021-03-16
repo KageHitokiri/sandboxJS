@@ -11,8 +11,14 @@
 }
 
 /*Botones*/
-#itFollowsButton{
-    display: block;
+#itFollowsHideButton{
+    width: 75px;
+    height: 55px;
+    margin: 5px;
+    padding: 2px;
+}
+#itFollowsShowButton{
+    display: none;
     width: 75px;
     height: 55px;
     margin: 5px;

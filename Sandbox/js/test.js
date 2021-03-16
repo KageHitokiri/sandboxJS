@@ -1,16 +1,15 @@
 'use strict'
 
 window.addEventListener('load',()=>{
-    let itFollowsButton = $('#itFollowsButton');
+    let itFollowsHideButton = $('#itFollowsHideButton');
+    let itFollowsShowButton = $('#itFollowsShowButton');
 
-    itFollowsButton.click(function(){
-        if ($(this).html=='Mostrar el puntero'){
-            $(this).html('Ocultar el puntero');
-        } else {
-            $(this).html('Mostrar el puntero');
-        }
+    itFollowsHideButton.click(function(){
+        $(this).hide();
+        itFollowsShowButton.show();
     });
+    itFollowsShowButton.click(function(){
+        $(this).hide();
+        itFollowsHideButton.show();
+    })
 })
-
-
-

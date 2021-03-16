@@ -9,6 +9,14 @@
     border: 2px solid black;
     opacity: 0.5;
 }
+#container__shadowButtons{
+    background-color: purple;
+    width: 85px;
+    height: 65px;
+    padding: 3px;
+    align-content: center;
+    border-radius: 20px;
+}
 
 /*Botones*/
 #itFollowsShowShadow{
@@ -16,6 +24,7 @@
     height: 55px;
     margin: 5px;
     padding: 2px;
+    border-radius: 20px;
 }
 #itFollowsHideShadow{
     display: none;
@@ -23,4 +32,5 @@
     height: 55px;
     margin: 5px;
     padding: 2px;
+    border-radius: 20px;
 }

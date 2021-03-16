@@ -1,0 +1,10 @@
+/*Divs*/
+
+/*Botones*/
+#itFollowsButton{
+    display: block;
+    width: 75px;
+    height: 55px;
+    margin: 5px;
+    padding: 2px;
+}

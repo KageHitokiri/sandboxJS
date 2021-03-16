@@ -6,18 +6,19 @@
     height: 25px;
     border-radius: 50px;
     background-color: aquamarine;
-    border-color: black;
+    border: 2px solid black;
     opacity: 0.5;
 }
 
 /*Botones*/
-#itFollowsHideButton{
+#itFollowsShowShadow{
+    display:block;
     width: 75px;
     height: 55px;
     margin: 5px;
     padding: 2px;
 }
-#itFollowsShowButton{
+#itFollowsHideShadow{
     display: none;
     width: 75px;
     height: 55px;

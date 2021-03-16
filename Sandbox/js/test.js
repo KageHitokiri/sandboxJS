@@ -1,15 +1,27 @@
 'use strict'
 
 window.addEventListener('load',()=>{
-    let itFollowsHideButton = $('#itFollowsHideButton');
-    let itFollowsShowButton = $('#itFollowsShowButton');
+    let itFollowsShowShadow = $('#itFollowsShowShadow');
+    let itFollowsHideShadow = $('#itFollowsHideShadow');
+    let itFollowsContainer = $('#itFollows');
 
-    itFollowsHideButton.click(function(){
+    itFollowsShowShadow.click(function(){
         $(this).hide();
-        itFollowsShowButton.show();
+        itFollowsHideShadow.show();
+        itFollowsContainer.show();
+        followingShadow();
     });
-    itFollowsShowButton.click(function(){
+
+    itFollowsHideShadow.click(function(){
         $(this).hide();
-        itFollowsHideButton.show();
+        itFollowsShowShadow.show();
+        itFollowsContainer.hide();
     })
+
+    function followingShadow(){
+        $(document).mousemove(function(){
+            itFollowsContainer.css('left',event.clientX)
+                            .css('top',event.clientY);
+        })
+    }
 })

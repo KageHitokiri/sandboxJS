@@ -1,4 +1,14 @@
 /*Divs*/
+#itFollows{
+    display:none;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: aquamarine;
+    border-color: black;
+    opacity: 0.5;
+}
 
 /*Botones*/
 #itFollowsButton{

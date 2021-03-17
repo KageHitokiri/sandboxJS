@@ -29,9 +29,12 @@
     height: 50px;
     width: 300px;
     border: 2px dashed black;
+    padding: 5px;
+    margin-top: 0px;
     background-color: #ccc;
     text-align: center;
-    line-height: 20px;
+    line-height: auto;
+    font-size: 15px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 /*Clases*/  

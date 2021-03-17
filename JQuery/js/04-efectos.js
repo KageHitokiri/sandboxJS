@@ -2,6 +2,10 @@
 
 window.addEventListener('load',()=>{
     let vanishContainer;
+    let animationsButton = $('#animationButton');
+    let resetButton = $('#resetButton');
+    let vanishContainerText = $('#vanishContainerText');
+
     vanishContainer = $('#vanishContainer');
 
     $('#showButton').hide();
@@ -47,5 +51,24 @@ window.addEventListener('load',()=>{
      */
     $('#allInOneButton').click(function(){
         vanishContainer.toggle('fast');
+    });
+
+    animationsButton.click(function(){
+        vanishContainer.animate({
+            marginLeft:'50px',
+            fontSize:"40px",
+            height: "150px"
+        },
+            5000);
+        vanishContainerText.innerHTML="test";
+        
+    });
+    resetButton.click(function(){
+        vanishContainer.animate({
+            marginLeft:'0px',
+            fontSize:"15px",
+            height: "50px"
+        },
+            0);
     });
 })

@@ -59,7 +59,9 @@ window.addEventListener('load',()=>{
             fontSize:"40px",
             height: "150px"
         },
-            5000);
+            5000, ()=>{
+                resetButton.removeAttr('disabled');
+            });
         vanishContainerText.innerHTML="test";
         
     });
@@ -69,6 +71,8 @@ window.addEventListener('load',()=>{
             fontSize:"15px",
             height: "50px"
         },
-            0);
+            0,()=>{
+                resetButton.attr('disabled','disabled');
+            });
     });
 })

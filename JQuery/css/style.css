@@ -51,6 +51,15 @@
 .resaltado{
     border: 2px solid red;
 }
+.elemento{
+    width: 350px;
+    height: 150px;
+    border: 2px solid black;
+    background-color: lightgreen;
+    margin: 5px;
+    padding: 10px;
+    float: left;
+}
 /*Formularios*/
 /*
 input{

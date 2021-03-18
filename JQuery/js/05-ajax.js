@@ -25,4 +25,22 @@ $(document).ready(()=>{
     /**
      * Post
      */
+
+    $('#postForm').submit(()=>{
+        var user = {
+            name    : $('#nameInputText').val(),
+            web     : $('#webInputText').val()
+        }
+        //console.log(user);
+
+        $.post('https://reqres.in/api/users?page=2', user, function(response){
+            console.log(response);
+        });
+        /**
+         * Añadimos un return false para evitar que nos redirija
+         * De no estar, nos redirigirá a reqres
+         */
+        return false;
+    });
+
 })

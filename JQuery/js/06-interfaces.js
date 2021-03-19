@@ -81,4 +81,12 @@ $(document).ready(()=>{
      */
 
     $(document).tooltip();
+
+    /**
+     * Dialog
+     */
+    $('#launchPopup').click(()=>{
+        $('#popup').dialog();
+    })
+    
 })

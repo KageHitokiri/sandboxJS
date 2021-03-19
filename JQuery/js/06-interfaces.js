@@ -74,4 +74,11 @@ $(document).ready(()=>{
         //effectsDiv.toggle('slide',1000);
         effectsDiv.toggle('shake', 500);
     })
+
+    /**
+     * Tooltip
+     * muestra el valor del atributo "title" de la etiqueta
+     */
+
+    $(document).tooltip();
 })

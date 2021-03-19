@@ -88,5 +88,8 @@ $(document).ready(()=>{
     $('#launchPopup').click(()=>{
         $('#popup').dialog();
     })
-    
+    /**
+     * Datepicker
+     */
+    $('#calendar').datepicker();
 })

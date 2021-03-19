@@ -92,4 +92,10 @@ $(document).ready(()=>{
      * Datepicker
      */
     $('#calendar').datepicker();
+
+    /**
+     * Tabs
+     */
+    $('#baseTab').tabs();
+
 })

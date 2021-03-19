@@ -16,5 +16,16 @@ $(document).ready(()=>{
     /**
      * Seleccionar elementos
      */
-    $('.selectionableList').selectable();
+    //$('.selectionableList').selectable();
+    /**
+     * Reordenar elementos de una lista
+     */
+    $('.selectionableList').sortable({
+        /**
+         * update: nos permite lanzar funciones cuando se actualiza la lista
+         */
+        update: function(event, ui) {
+            console.log("Ha cambiado la lista");
+        }
+    });
 })

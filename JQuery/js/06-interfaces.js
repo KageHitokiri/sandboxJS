@@ -12,4 +12,9 @@ $(document).ready(()=>{
      * Resizable
      */
     $('.elemento').resizable();
+
+    /**
+     * Seleccionar elementos
+     */
+    $('.selectionableList').selectable();
 })

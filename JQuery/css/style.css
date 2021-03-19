@@ -60,6 +60,27 @@
     padding: 10px;
     float: left;
 }
+.selectionableList li{
+    width: 50%;
+    background-color: violet;
+    padding: 10px;
+    border: 2px solid #ccc;
+    list-style: none;
+    cursor:pointer;
+}
+/*
+Selecting y Selected forman parte de la propiedad "selectable()"
+Selecting:
+    Mientras seleccionamos los elementos
+Selected:
+    Elementos ya seleccionados
+*/
+ul .ui-selecting{
+    background-color: lightblue;
+}
+ul .ui-selected{
+    background-color: blue;
+}
 /*Formularios*/
 /*
 input{
